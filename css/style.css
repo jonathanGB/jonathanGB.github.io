@@ -1,0 +1,78 @@
+body {
+	background: #153151;
+	font-family: 'Lato', Verdana !important;
+}
+
+header img {
+	border-radius: 10px;
+}
+
+header {
+	text-shadow: 1px 0px 1px gray;
+}
+
+.container {
+	background: #CEDFF2;
+	padding: 10px;
+}
+
+#belowHeader {
+	margin-top: 10px;
+	text-align: center;
+}
+
+
+
+/* Colour Palette  ---  http://colllor.com/4786cf   */
+
+	/*
+	#040a10
+
+	#081420
+
+	#0d1d31
+
+	#112741
+
+	#153151
+
+	#193b61
+
+	#1d4572
+
+	#214e82
+
+	#265892
+
+	#2a62a2
+
+	#2e6cb2
+
+	#3276c3
+
+	#3c80cd
+
+	#4786cf
+
+	#5d95d5
+
+	#6da0d9
+
+	#7daade
+
+	#8db5e2
+
+	#9ebfe6
+
+	#aecaea
+
+	#bed5ee
+
+	#cedff2
+
+	#dfeaf7
+
+	#eff4fb
+
+	#ffffff
+	*/
