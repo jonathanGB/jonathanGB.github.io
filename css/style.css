@@ -1,24 +1,62 @@
 body {
 	background: #153151;
 	font-family: 'Lato', Verdana !important;
+	text-align: center;
+}
+
+nav {
+	background: #153151;
+	color: #EFF4FB;
+	padding: 5px;
+	margin-bottom: 10px;
 }
 
 header img {
 	border-radius: 10px;
+	max-height: 250px;
 }
 
 header {
 	text-shadow: 1px 0px 1px gray;
+	text-align: center;
+}
+
+section h2 {
+	font-size: 1.6rem;
+	text-align: left;
+	font-weight: bold;
+	color: #112741;
+}
+
+hr {
+	border-color: #081420;
+}
+
+#social img {
+	max-height: 65px;
+	min-height: 40px;
+}
+
+#social {
+	margin-top: 10px;
 }
 
 .container {
 	background: #CEDFF2;
-	padding: 10px;
 }
 
 #belowHeader {
 	margin-top: 10px;
-	text-align: center;
+}
+
+@media screen and (max-width: 1025px) {
+	h1 {
+		font-size: 1.7rem;
+	}
+
+	section {
+		text-align: justify;
+	}
 }
 
 
