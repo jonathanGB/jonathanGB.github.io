@@ -34,7 +34,7 @@ section h2 {
 }
 
 .container.light section h2, h1 {
-	color: #112741;
+	color: #153151;
 }
 
 .container.dark section h2 .underline {
@@ -42,7 +42,7 @@ section h2 {
 }
 
 .container.light section h2 .underline {
-	border-bottom: 	3px solid #112741;
+	border-bottom: 	3px solid #153151;
 }
 
 .underline {
