@@ -132,6 +132,12 @@ div.right-border {
 	}
 }
 
+@media screen and (max-width: 665px) and (min-width: 642px) {
+	a[href="#education"] {
+		font-size: 95%;
+	}
+}
+
 
 
 /* Colour Palette  ---  http://colllor.com/4786cf   */
