@@ -31,8 +31,13 @@ section h2 .underline {
 	border-bottom: 3px solid #DFEAF7;
 }
 
-section.dark {
+.container.dark {
+	background: #153151;
 	color: #EFF4FB;
+}
+
+.container.light {
+	background: #CEDFF2
 }
 
 #social img {
@@ -41,16 +46,11 @@ section.dark {
 }
 
 #social {
-	margin-top: 10px;
-	margin-bottom: 20px;
-}
-
-.container {
-	background: #CEDFF2;
+	padding-bottom: 20px;
 }
 
 #aboutMe {
-	margin-top: 10px;
+	padding-top: 10px;
 	background: #153151;
 	/*border-top: 2px solid #040A10;
 	border-bottom: 2px solid #040A10;*/
