@@ -7,6 +7,7 @@
 		<meta charset="UTF-8" />
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<script src="js/modernizr.js"></script>
 	</head>
 
 	<style>
@@ -90,14 +91,25 @@
 				<h2 class="small-12 medium-offset-1 medium-11 large-offset-0 large-12 columns">
 					<span class="underline">education & skills</span> 
 				</h2>
-				<p class="small-12 medium-offset-1 medium-11 large-offset-0 large-12 columns">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
+				<ul class="small-12 medium-offset-1 medium-11 large-offset-0 large-12 columns">
+					<li>
+						<h3> University of Ottawa (2014-2018) - GPA: 9.4 </h3>
+						<i class="info">Bachelor of Applied Science (B.A.Sc.) Software Engineering</i>
+						<p>
+							Ceci est le contenu
+						</p>
+					</li>
+					<li>
+						<h3> Cégep de l'Outaouais (2012-2014) - AVG: 87% </h3>
+						<i class="info">College Degree in Pure Sciences</i>
+						<p>
+							During my two years here, I learned about many sciences which study the Universe: I studied classical mechanics, electricity, modern physics, biology and chemistry. I also acquired a strong mathematical background, going from differential equations, linear algebra, to multivariable calculus. Part of the Cégep's curriculum is the study of philosophy and ethics over three semesters.
+						</p>
+						<p>
+							During my last semester, I had the chance to work on a physics project with a colleague: we decided to build an autonomous robot capable of detecting targets in its surrounding, and stopping in front of it - and that, with no priour knowledge about robotics. To learn more, about this project, <a class="smooth-scroll" href="#robot">click here</a>.
+						</p>
+					</li>
+				</ul>
 			</section>
 		</div>
 		<div class="container dark">
@@ -117,10 +129,15 @@
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<span id="robot">test redirection</span>
 				</p>
 			</section>
 		</section>
+		<div id="arrowTop">
+			<span data-tooltip class="has-tip tip-right" title="Top of the page">
+				<img src="img/arrowTop.png">
+			</span>
+		</div>
 		<!-- <footer class="container light">
 			<section id="footer" class="row">
 				<div class="small-12 columns"> 
@@ -132,8 +149,7 @@
 			</section>
 		</footer> -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<script src="js/script.js"></script>
-		<script src="js/foundation.min.js"></script>
+		<script src="js/foundation.tooltip.min.js"></script>
 		<script src="js/scrollReveal.min.js"></script>
 		<script>
 			var config = {
@@ -142,5 +158,6 @@
 
       		window.sr = new scrollReveal(config);
     	</script>
+    	<script src="js/script.js"></script>
 	</body>
 </html>

@@ -22,6 +22,27 @@ header {
 	text-align: center;
 }
 
+i.info {
+	position: relative;
+	bottom: 15px;
+}
+
+section {
+	text-align: left;
+}
+
+section ul {
+	margin-top: 10px;
+}
+
+section ul li h3 {
+	font-family: 'Lato', Verdana;
+}
+
+section ul li {
+	margin-left: 1rem;
+}
+
 section h2 {
 	font-size: 1.6rem;
 	text-align: left;
@@ -106,6 +127,36 @@ div.right-border {
 	border-right: 1px solid white;
 }
 
+#arrowTop {
+	opacity: 0.8;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	text-align: center;
+	padding-bottom: 5px;
+	display: none;
+}
+
+#arrowTop span {
+	z-index: 1;
+}
+
+#arrowTop img {
+	height: 40px;
+	opacity: 0.9;
+}
+
+.has-tip {
+	border-bottom: 0 !important;
+}
+
+#arrowTop img:hover {
+	cursor: pointer;
+}
+
 @media screen and (max-width: 1025px) {
 	h1 {
 		font-size: 1.7rem;
@@ -141,6 +192,12 @@ div.right-border {
 
 	#resume {
 		border-top: 1px solid #153151;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	section ul li h3 {
+		font-size: 1.2rem;
 	}
 }
 
