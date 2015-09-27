@@ -26,11 +26,27 @@ section h2 {
 	font-size: 1.6rem;
 	text-align: left;
 	font-weight: bold;
+	padding-top: 10px;
+}
+
+.container.dark section h2 {
 	color: #DFEAF7;
 }
 
-section h2 .underline {
+.container.light section h2, h1 {
+	color: #112741;
+}
+
+.container.dark section h2 .underline {
 	border-bottom: 3px solid #DFEAF7;
+}
+
+.container.light section h2 .underline {
+	border-bottom: 	3px solid #112741;
+}
+
+.underline {
+	padding-bottom: 4px;
 }
 
 .container.dark {
@@ -39,7 +55,8 @@ section h2 .underline {
 }
 
 .container.light {
-	background: #CEDFF2
+	background: #CEDFF2;
+	color: #040A10;
 }
 
 div.container.first {
@@ -87,7 +104,7 @@ div.right-border {
 	}
 
 	section {
-		text-align: justify;
+		text-align: left;
 	}
 }
 
