@@ -8,6 +8,9 @@ nav {
 	color: #EFF4FB;
 	padding: 10px;
 	margin-bottom: 10px;
+	position: fixed !important;
+	z-index: 1;
+	opacity: 0.9;
 }
 
 header img {
@@ -40,6 +43,10 @@ section h2 .underline {
 	background: #CEDFF2
 }
 
+div.container.first {
+	padding-top: 80px;
+}
+
 #social img {
 	max-height: 65px;
 	min-height: 40px;
@@ -47,6 +54,7 @@ section h2 .underline {
 
 #social {
 	padding-bottom: 20px;
+	padding-top: 10px;
 }
 
 #aboutMe {
