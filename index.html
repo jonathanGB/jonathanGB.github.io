@@ -39,23 +39,29 @@
 				<h1 class="small-12 medium-12 large-9 columns">Hey, I'm Jonathan Guillotte-Blouin. Software Engineering student at uOttawa. </h1>
 			</header>
 			<aside id="social" class="row">
-				<div class="small-6 medium-4 columns" data-sr="enter left move 50px over 1.5s"> 
+				<div class="small-6 medium-4 columns" data-sr="enter top move 20px over 1.5s"> 
 					<a href="https://github.com/jonathanGB" class="handle">
 						<img src="img/github.png"> <br />
 						@jonathanGB
 					</a>
 				</div>
-				<div class="small-6 medium-4 columns" data-sr="scale up 20% over 2s"> 
+				<div class="small-6 medium-4 columns" data-sr="enter top move 20px over 1.5s"> 
 					<a href="https://twitter.com/boubou_101" class="handle">
 						<img src="img/twitter.png"> <br />
 						@boubou_101
 					</a>
 				</div>
-				<div class="small-12 medium-4 columns" data-sr="enter right move 50px over 1.5s">
+				<div id="email" class="small-12 medium-4 columns" data-sr="enter top move 20px over 1.5s">
 					<a href="mailto:jonathan.guillotte.blouin@gmail.com">
 						<img src="img/email.png"> <br />
 						<span id="emailReduce"> jonathan.guillotte.blouin@gmail.com	</span>
 					</a>	
+				</div>
+				<div class="small-12 columns" id="resume" data-sr="enter bottom move 20px over 1.5s"> 
+					<a href="resume.pdf" download target="_blank">
+						<img src="img/pdf.png">
+						Download my resume
+					</a>
 				</div>
 			</aside>
 		</div>
@@ -74,9 +80,9 @@
 				<p class="small-12 medium-offset-1 medium-11 columns">
 					Also, I like to play hockey - I'm a defenseman -, watch soccer (German fan here) and to play the drums. My favourite bands would be Rush (you know... <a href="https://www.youtube.com/watch?v=auLBLk4ibAk" target="_blank">Tom Sawyer</a>? Or if you dare, <a href="https://www.youtube.com/watch?v=AZm1_jtY1SQ" target="_blank">2112</a>... yeah, it's 20mins long, but you gotta do what you gotta do!), Nirvana (and pretty much all other grunge/alt rock of the 90s) and <a href="https://www.youtube.com/watch?v=q5Z_S4DT87c" target="_blank">Jean Leloup</a> (yay, good stuff from Québec).
 				</p>
-				<p class="small-12 medium-offset-1 medium-11 columns">
+				<!-- <p class="small-12 medium-offset-1 medium-11 columns">
 					I also watch some shows, like &#8220;The Walking Dead&#8221; and its spinoff &#8220;Fear the Walking Dead&#8221;, &#8220;Silicon Valley&#8221; and &#8220;Mr. Robot&#8221;, and game on my PC from time to time with friends.
-				</p>
+				</p> -->
 			</section>
 		</div>
 		<div class="container light">
@@ -115,8 +121,18 @@
 				</p>
 			</section>
 		</section>
-		
+		<!-- <footer class="container light">
+			<section id="footer" class="row">
+				<div class="small-12 columns"> 
+					<a href="https://github.com/jonathanGB">
+						<img src="img/pdf.png">
+						Download my résumé
+					</a>
+				</div>
+			</section>
+		</footer> -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="js/script.js"></script>
 		<script src="js/foundation.min.js"></script>
 		<script src="js/scrollReveal.min.js"></script>
 		<script>
@@ -126,6 +142,5 @@
 
       		window.sr = new scrollReveal(config);
     	</script>
-    	<script src="js/script.js"></script>
 	</body>
 </html>

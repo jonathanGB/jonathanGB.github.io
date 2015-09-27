@@ -7,6 +7,6 @@ $(function() {
 
 		$('html, body').animate({
 			scrollTop: $goToElement.offset().top - navHeight
-		}, Math.abs(window.scrollY - $goToElement.offset().top ) * 2);
+		}, Math.abs(window.scrollY - $goToElement.offset().top ));
 	});
 })

@@ -73,6 +73,14 @@ div.container.first {
 	padding-top: 10px;
 }
 
+#email {
+	padding-bottom: 15px;
+}
+
+#resume {
+	padding-top: 15px;
+}
+
 #aboutMe {
 	padding-top: 10px;
 	background: #153151;
@@ -130,11 +138,15 @@ div.right-border {
 	h1 {
 		font-size: 1.3rem;
 	}
+
+	#resume {
+		border-top: 1px solid #153151;
+	}
 }
 
-@media screen and (max-width: 665px) and (min-width: 642px) {
+@media screen and (max-width: 665px) {
 	a[href="#education"] {
-		font-size: 95%;
+		font-size: 94%;
 	}
 }
 
