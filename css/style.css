@@ -140,13 +140,9 @@ div.right-border {
 	display: none;
 }
 
-#arrowTop span {
-	z-index: 1;
-}
-
 #arrowTop img {
 	height: 40px;
-	opacity: 0.9;
+	opacity: 0.8;
 }
 
 .has-tip {
