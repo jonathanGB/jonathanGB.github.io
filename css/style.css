@@ -1,5 +1,4 @@
 body {
-	background: #153151;
 	font-family: 'Lato', Verdana !important;
 	text-align: center;
 }
@@ -7,7 +6,7 @@ body {
 nav {
 	background: #153151;
 	color: #EFF4FB;
-	padding: 5px;
+	padding: 10px;
 	margin-bottom: 10px;
 }
 
@@ -25,11 +24,15 @@ section h2 {
 	font-size: 1.6rem;
 	text-align: left;
 	font-weight: bold;
-	color: #112741;
+	color: #DFEAF7;
 }
 
-hr {
-	border-color: #081420;
+section h2 .underline {
+	border-bottom: 3px solid #DFEAF7;
+}
+
+section.dark {
+	color: #EFF4FB;
 }
 
 #social img {
@@ -39,14 +42,36 @@ hr {
 
 #social {
 	margin-top: 10px;
+	margin-bottom: 20px;
 }
 
 .container {
 	background: #CEDFF2;
 }
 
-#belowHeader {
+#aboutMe {
 	margin-top: 10px;
+	background: #153151;
+	/*border-top: 2px solid #040A10;
+	border-bottom: 2px solid #040A10;*/
+}
+
+nav a {
+	margin: 0;
+	font-weight: bold;
+	color: #EFF4FB;
+}
+
+nav a:focus {
+	color: #EFF4FB;
+}
+
+nav a:hover {
+	color: #0078a0;
+}
+
+div.right-border {
+	border-right: 1px solid white;
 }
 
 @media screen and (max-width: 1025px) {
@@ -56,6 +81,30 @@ hr {
 
 	section {
 		text-align: justify;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	#emailReduce {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 641px) {
+	div.right-border {
+		border-right: 0;
+	}
+
+	div.bottom-border {
+		border-bottom: 1px solid white;
+	}
+
+	#emailReduce {
+		font-size: 100%;
+	}
+
+	h1 {
+		font-size: 1.3rem;
 	}
 }
 
