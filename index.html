@@ -75,7 +75,11 @@
 		<script src="js/foundation.min.js"></script>
 		<script src="js/scrollReveal.min.js"></script>
 		<script>
-      		window.sr = new scrollReveal();
+			var config = {
+				mobile: true
+			};
+
+      		window.sr = new scrollReveal(config);
     	</script>
     	<script src="js/script.js"></script>
 	</body>
