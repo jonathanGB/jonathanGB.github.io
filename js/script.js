@@ -1,11 +1,4 @@
 $(function() {
-	$(document).foundation({
-		tooltip: {
-			touch_close_text: '',
-			disable_for_touch: true
-		}
-	});
-
 	$('#arrowTop img').click(function(e) {
 		e.preventDefault();
 
@@ -34,4 +27,14 @@ $(function() {
 
 	if (scrollY > 300)
 		$('#arrowTop').show();
+
+	if (Modernizr.touch)
+		$('#arrowTop span').removeAttr('title class data-tooltip');
+
+	$(document).foundation({
+		tooltip: {
+			touch_close_text: '',
+			disable_for_touch: true
+		}
+	});
 })
