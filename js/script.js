@@ -4,7 +4,7 @@ $(function() {
 
 		$('html, body').animate({
 			scrollTop: 0
-		}, window.pageYOffset * 2 / 3);
+		}, window.pageYOffset / 2);
 	});
 
 	$('a.smooth-scroll').click(function(e) {
@@ -15,7 +15,7 @@ $(function() {
 
 		$('html, body').animate({
 			scrollTop: $goToElement.offset().top - navHeight
-		}, Math.abs(window.pageYOffset - $goToElement.offset().top));
+		}, Math.abs(window.pageYOffset - $goToElement.offset().top) / 2);
 	});
 
 	$(document).scroll(function(e) {
