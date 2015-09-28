@@ -28,8 +28,11 @@ $(function() {
 	if (window.pageYOffset > 300)
 		$('#arrowTop').show();
 
-	if ('ontouchstart' in document.documentElement)
+	if ('ontouchstart' in document.documentElement) {
 		$('#arrowTop span').removeAttr('title class data-tooltip');
+	} else {
+		console.log("nothing");
+	}
 
 	$(document).foundation({
 		tooltip: {
