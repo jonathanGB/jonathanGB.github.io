@@ -23,7 +23,11 @@
 				<a href="#aboutMe" class="smooth-scroll">about me</a>
 			</div>
 			<div class="small-6 medium-3 columns right-border bottom-border">
-				<a href="#education" class="smooth-scroll">education & skills</a>
+				<a data-dropdown="drop" data-options="is_hover:true; hover_timeout:100">education & skills</a>
+				<ul id="drop" class="tiny f-dropdown" data-dropdown-content>
+					<li><a href="#education" class="smooth-scroll">education</a></li>
+					<li><a href="#skills" class="smooth-scroll">skills</a></li>
+				</ul>
 			</div>
 			<div class="small-6 medium-3 columns right-border">
 				<a href="#projects" class="smooth-scroll">projects</a>

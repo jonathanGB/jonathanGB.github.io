@@ -30,8 +30,7 @@ $(function() {
 
 	if ('ontouchstart' in document.documentElement) {
 		$('#arrowTop span').removeAttr('title class data-tooltip');
-	} else {
-		console.log("nothing");
+		$('a[data-dropdown]').removeAttr('data-options');
 	}
 
 	$(document).foundation({

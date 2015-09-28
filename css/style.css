@@ -84,6 +84,10 @@ div.container.first {
 	padding-top: 80px;
 }
 
+ul#drop, ul#drop li, ul#drop li a {
+	opacity: 1 !important;
+}
+
 #social img {
 	max-height: 65px;
 	min-height: 40px;
@@ -143,12 +147,16 @@ nav a {
 	color: #EFF4FB;
 }
 
-nav a:focus {
+nav a:hover {
+	color: #0078a0;
+}
+
+nav a[data-dropdown]:hover {
 	color: #EFF4FB;
 }
 
-nav a:hover {
-	color: #0078a0;
+nav a[data-dropdown] {
+	padding-bottom: 3px;
 }
 
 div.right-border {
@@ -226,7 +234,7 @@ div.right-border {
 }
 
 @media screen and (max-width: 665px) {
-	a[href="#education"] {
+	a[data-dropdown="drop"] {
 		font-size: 94%;
 	}
 }
