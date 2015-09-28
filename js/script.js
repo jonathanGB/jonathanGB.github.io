@@ -4,7 +4,7 @@ $(function() {
 
 		$('html, body').animate({
 			scrollTop: 0
-		}, window.scrollY * 2 / 3);
+		}, window.pageYOffset * 2 / 3);
 	});
 
 	$('a.smooth-scroll').click(function(e) {
@@ -15,17 +15,17 @@ $(function() {
 
 		$('html, body').animate({
 			scrollTop: $goToElement.offset().top - navHeight
-		}, Math.abs(window.scrollY - $goToElement.offset().top));
+		}, Math.abs(window.pageYOffset - $goToElement.offset().top));
 	});
 
 	$(document).scroll(function(e) {
-		if (scrollY > 300)
+		if (window.pageYOffset > 300)
 			$('#arrowTop').show();
 		else
 			$('#arrowTop').hide();
 	});
 
-	if (scrollY > 300)
+	if (window.pageYOffset > 300)
 		$('#arrowTop').show();
 
 	if ('ontouchstart' in document.documentElement)
