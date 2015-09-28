@@ -35,7 +35,7 @@ section ul {
 	margin-top: 10px;
 }
 
-section ul li h3 {
+h1, h2, h3, h4 {
 	font-family: 'Lato', Verdana;
 }
 
@@ -54,7 +54,7 @@ section h2 {
 	color: #DFEAF7;
 }
 
-.container.light section h2, h1 {
+.container.light section h2, .container.light section h3, h1 {
 	color: #153151;
 }
 
@@ -92,6 +92,34 @@ div.container.first {
 #social {
 	padding-bottom: 20px;
 	padding-top: 10px;
+}
+
+#skills blockquote {
+	border-left: 4px solid #F54545;
+	color: #333333;
+	font-style: italic;
+}
+
+#skillsList {
+	text-align: center;
+}
+
+#skillsList h4 {
+	font-weight: bold;
+	margin-bottom: 0;
+	text-decoration: underline;
+}
+
+#skillsList ul {
+	margin-left: 0;
+	margin-top: 1px;
+}
+
+#skillsList li {
+	list-style-type: none;
+	margin-left: 0;
+	font-style: italic;
+	line-height: 115%;
 }
 
 #email {
