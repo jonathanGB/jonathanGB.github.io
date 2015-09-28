@@ -28,7 +28,7 @@ $(function() {
 	if (scrollY > 300)
 		$('#arrowTop').show();
 
-	if (Modernizr.touch)
+	if ('ontouchstart' in document.documentElement)
 		$('#arrowTop span').removeAttr('title class data-tooltip');
 
 	$(document).foundation({
