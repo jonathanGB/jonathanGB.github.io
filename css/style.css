@@ -54,7 +54,7 @@ section h2 {
 	color: #DFEAF7;
 }
 
-.container.light section h2, .container.light section h3, h1 {
+.container.light section h2, .container.light section h3, footer h4, h1 {
 	color: #153151;
 }
 
@@ -187,6 +187,16 @@ div.right-border {
 
 #arrowTop img:hover {
 	cursor: pointer;
+}
+
+footer {
+	display: none;
+	padding-bottom: 35px;
+}
+
+footer h4 {
+	padding-bottom: 8px;
+	line-height: 100%;
 }
 
 @media screen and (max-width: 1025px) {
