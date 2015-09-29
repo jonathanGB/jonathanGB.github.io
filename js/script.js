@@ -86,6 +86,9 @@ $(function() {
 					$('#easter2').fadeOut(500);
 				}, 5000);
 			});
+		} else if (clicks == 15) {
+			$('audio').attr('loop', 'true').get(0).play();
+			$('#easter2').fadeIn(500);
 		}
 	})
 })
