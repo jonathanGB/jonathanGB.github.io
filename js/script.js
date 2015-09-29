@@ -62,7 +62,8 @@ $(function() {
 	});
 
 	/* Easter egg purpose */
-	var clicks = 0;
+	var clicks = 0,
+		clicks2 = 0;
 
 	$('header img').click(function() {
 		clicks++;
@@ -90,5 +91,12 @@ $(function() {
 			$('audio').attr('loop', 'true').get(0).play();
 			$('#easter2').fadeIn(500);
 		}
-	})
+	});
+
+	$('#pdfDownload').click(function() {
+		clicks2++;
+
+		if (clicks2 == 3)
+			$('audio').get(1).play();
+	});
 })
