@@ -96,7 +96,7 @@ $(function() {
 	$('#pdfDownload').click(function() {
 		clicks2++;
 
-		if (clicks2 == 3)
+		if (clicks2 >= 3)
 			$('audio').get(1).play();
 	});
 })
