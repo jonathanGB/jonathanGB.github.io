@@ -1,4 +1,5 @@
-$(function() {
+// NEED TO COMMENT THE CODE
+$(function() {	
 	$('#arrowTop img').click(function(e) {
 		e.preventDefault();
 
