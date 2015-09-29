@@ -60,4 +60,32 @@ $(function() {
 			disable_for_touch: true
 		}
 	});
+
+	/* Easter egg purpose */
+	var clicks = 0;
+
+	$('header img').click(function() {
+		clicks++;
+		
+		if (clicks == 5) {
+			console.log("and his name is john cena");
+			$('#easter1').fadeIn(500);
+			$('audio').get(0).play();
+
+			setTimeout(function() {
+				$('#easter1').fadeOut(500);
+			}, 6000);
+		} else if (clicks == 10) {
+			console.log("it's happening!");
+
+			var src = $('#easter2').data('src');
+			$('#easter2').removeData('src').removeAttr('data-src').attr('src', src);
+
+			$('#easter2').fadeIn(500, function() {
+				setTimeout(function() {
+					$('#easter2').fadeOut(500);
+				}, 5000);
+			});
+		}
+	})
 })
