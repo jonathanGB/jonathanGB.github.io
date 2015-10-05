@@ -39,16 +39,31 @@ $(function() {
 		    lang = $('html').attr('lang'),
 		    days = [],
 		    months = [],
+		    dateSuffix = lastUpdate.getDate(),
 		    lastUpdateString = '';
 		    
 		if (lang == "en") {
 			days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 			months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-			lastUpdateString = lastUpdateString.concat(days[lastUpdate.getDay()], ", ", months[lastUpdate.getMonth()], " ", lastUpdate.getDate(), " ", lastUpdate.getFullYear());
+
+			if (dateSuffix == 1 || dateSuffix == 21 || dateSuffix == 31)
+				dateSuffix = dateSuffix + '<sup>st</sup>';
+			else if (dateSuffix == 2 || dateSuffix == 22)
+				dateSuffix = dateSuffix + '<sup>nd</sup>';
+			else if (dateSuffix == 3 || dateSuffix == 23)
+				dateSuffix = dateSuffix + '<sup>rd</sup>';
+			else
+				dateSuffix = dateSuffix + '<sup>th</sup>';
+
+			lastUpdateString = lastUpdateString.concat(days[lastUpdate.getDay()], ", ", months[lastUpdate.getMonth()], " ", dateSuffix, " ", lastUpdate.getFullYear());
 		} else if (lang == "fr") {
 			days = [ "Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"];
 			months = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"];
-			lastUpdateString = lastUpdateString.concat(days[lastUpdate.getDay()], ", ", lastUpdate.getDate(), " ", months[lastUpdate.getMonth()], " ", lastUpdate.getFullYear());
+
+			if (dateSuffix == 1)
+				dateSuffix = dateSuffix + '<sup>er</sup>';
+
+			lastUpdateString = lastUpdateString.concat(days[lastUpdate.getDay()], ", ", dateSuffix, " ", months[lastUpdate.getMonth()], " ", lastUpdate.getFullYear());
 		}
 
 		$('footer #lastPush').html(lastUpdateString);
