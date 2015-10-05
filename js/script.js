@@ -86,6 +86,10 @@ $(function() {
 		
 		if (clicks == 5) {
 			console.log("and his name is john cena");
+
+			var src = $('#easter1').data('src');
+			$('#easter1').removeData('src').removeAttr('data-src').attr('src', src);
+
 			$('#easter1').fadeIn(500);
 			$('audio').get(0).play();
 
