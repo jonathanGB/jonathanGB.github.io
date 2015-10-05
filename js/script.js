@@ -109,10 +109,11 @@ $(function() {
 		}
 	});
 
-	$('#pdfDownload').click(function() {
-		clicks2++;
-
-		if (clicks2 >= 3)
-			$('audio').get(1).play();
+	$('a[data-dropdown]').one('click', function(e) {
+		console.log("lol");
+		setTimeout(function() {
+			if (!$(this).hasClass('open'))
+				$(this).attr('href', '#education').addClass('smooth-scroll').click();
+		}, 15);
 	});
 });
