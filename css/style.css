@@ -259,7 +259,7 @@ footer h4 {
 	}
 }
 
-@media screen and(max-width: 350px) {
+@media screen and (max-width: 380px) {
 	a[data-dropdown="drop"] {
 		font-size: 85%;
 	}
