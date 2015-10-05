@@ -100,4 +100,4 @@ $(function() {
 		if (clicks2 >= 3)
 			$('audio').get(1).play();
 	});
-})
+});
