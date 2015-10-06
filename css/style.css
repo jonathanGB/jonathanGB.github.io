@@ -22,7 +22,7 @@ header {
 	text-align: center;
 }
 
-i.info {
+.info {
 	position: relative;
 	bottom: 15px;
 }
@@ -60,7 +60,7 @@ section h2 {
 	padding-top: 10px;
 }
 
-.container.dark section h2 {
+.container.dark section h2, .container.dark section h3 {
 	color: #DFEAF7;
 }
 
@@ -101,6 +101,18 @@ ul#drop, ul#drop li, ul#drop li a {
 #social img {
 	max-height: 65px;
 	min-height: 40px;
+}
+
+#social a {
+	display: inline-block;
+	-webkit-transition: -webkit-transform 0.7s; 
+    transition: transform 0.7s;
+}
+
+#social a:hover {
+	-ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 #social {
@@ -259,9 +271,13 @@ footer h4 {
 	}
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 380px) {
 	a[data-dropdown="drop"] {
 		font-size: 75%;
+	}
+
+	p {
+		margin-bottom: 0.8rem;
 	}
 }
 
