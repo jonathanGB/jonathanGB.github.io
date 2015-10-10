@@ -82,6 +82,7 @@ section h2 {
 
 div.container.first {
 	padding-top: 80px;
+	background: url('../img/bigBackground.jpg') left top;
 }
 
 ul#drop, ul#drop li, ul#drop li a {
