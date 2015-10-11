@@ -171,6 +171,11 @@ nav a {
 	color: #EFF4FB;
 }
 
+nav a.smooth-scroll {
+	display: inline-block;
+	width: 100%;
+}
+
 nav a:hover {
 	color: #0078a0;
 }
