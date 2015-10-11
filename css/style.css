@@ -1,6 +1,8 @@
 body {
 	font-family: 'Lato', Verdana !important;
 	text-align: center;
+	background: url('../img/bigBackground.jpg') no-repeat center center fixed;
+	background-size: cover;
 }
 
 nav {
@@ -10,6 +12,10 @@ nav {
 	position: fixed !important;
 	z-index: 1;
 	opacity: 0.9;
+}
+
+header, aside, section, footer {
+	background: rgba(255, 255, 255, 0.6);
 }
 
 header img {
@@ -65,16 +71,9 @@ section h2 {
 	padding-top: 10px;
 }
 
-.container.dark section h2, .container.dark section h3 {
-	color: #DFEAF7;
-}
 
 .container.light section h2, .container.light section h3, footer h4, h1 {
 	color: #153151;
-}
-
-.container.dark section h2 .underline {
-	border-bottom: 3px solid #DFEAF7;
 }
 
 .container.light section h2 .underline {
@@ -85,20 +84,16 @@ section h2 {
 	padding-bottom: 4px;
 }
 
-.container.dark {
-	background: #153151;
-	color: #EFF4FB;
-}
-
 .container.light {
-	background: #CEDFF2;
 	color: #040A10;
 }
 
 div.container.first {
 	padding-top: 80px;
-	background: url('../img/bigBackground.jpg') no-repeat center top;
-	background-size: cover;
+}
+
+div.container.last {
+	padding-bottom: 60px;
 }
 
 ul#drop, ul#drop li, ul#drop li a {
@@ -136,6 +131,7 @@ ul#drop, ul#drop li, ul#drop li a {
 
 #skillsList {
 	text-align: center;
+	border-bottom: 1px solid #173b61;
 }
 
 #skillsList h4 {
@@ -166,9 +162,7 @@ ul#drop, ul#drop li, ul#drop li a {
 
 #aboutMe {
 	padding-top: 10px;
-	background: #153151;
-	/*border-top: 2px solid #040A10;
-	border-bottom: 2px solid #040A10;*/
+	border-bottom: 1px solid #173b61;
 }
 
 nav a {
@@ -221,7 +215,11 @@ div.right-border {
 
 footer {
 	display: none;
-	padding-bottom: 35px;
+	padding-bottom: 5px;
+	-webkit-border-radius: 0 0 10px 10px;
+	-moz-border-radius: 0 0 10px 10px;
+	border-radius: 0 0 10px 10px;
+	border-top: 1px solid #173b61;
 }
 
 footer h4 {
@@ -242,11 +240,22 @@ footer h4 {
 		padding-top: 0;
 	}
 
+	div.container.last {
+		padding-bottom: 0;
+	}
+
 	header {
 		-webkit-border-radius: 0;
 		-moz-border-radius: 0;
 		border-radius: 0;
 		padding-top: 80px;
+	}
+
+	footer {
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0;
+		padding-bottom: 35px;
 	}
 }
 
