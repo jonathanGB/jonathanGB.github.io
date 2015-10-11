@@ -18,8 +18,13 @@ header img {
 }
 
 header {
+	background: rgba(255, 255, 255, 0.6);
 	text-shadow: 1px 0px 1px gray;
 	text-align: center;
+	-webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0;
+	padding-top: 20px;
 }
 
 .info {
@@ -92,7 +97,8 @@ section h2 {
 
 div.container.first {
 	padding-top: 80px;
-	background: url('../img/bigBackground.jpg') left top;
+	background: url('../img/bigBackground.jpg') no-repeat center top;
+	background-size: cover;
 }
 
 ul#drop, ul#drop li, ul#drop li a {
@@ -119,6 +125,7 @@ ul#drop, ul#drop li, ul#drop li a {
 #social {
 	padding-bottom: 20px;
 	padding-top: 10px;
+	background: rgba(255, 255, 255, 0.6);
 }
 
 #skills blockquote {
@@ -229,6 +236,17 @@ footer h4 {
 
 	section {
 		text-align: left;
+	}
+
+	div.container.first {
+		padding-top: 0;
+	}
+
+	header {
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0;
+		padding-top: 80px;
 	}
 }
 
