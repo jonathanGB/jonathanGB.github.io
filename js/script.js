@@ -61,7 +61,7 @@ $(function() {
 	$(document).foundation({
 		tooltip: {
 			touch_close_text: '', // no text on close of the tooltip
-			disable_for_touch: true // yeah... you get it...
+			disable_for_touch: true
 		}
 	});
 
