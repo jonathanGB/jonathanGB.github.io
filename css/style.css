@@ -19,8 +19,16 @@ header, aside, section, footer {
 }
 
 header img {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
 	border-radius: 10px;
 	max-height: 250px;
+}
+
+img.round {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 }
 
 header {
@@ -171,6 +179,10 @@ nav a {
 	color: #EFF4FB;
 }
 
+div.no-padding-left {
+	padding-left: 0;
+}
+
 nav a.smooth-scroll {
 	display: inline-block;
 	width: 100%;
@@ -301,6 +313,22 @@ footer h4 {
 @media screen and (max-width: 665px) {
 	a[data-dropdown="drop"] {
 		font-size: 94%;
+	}
+	
+	div.mobile-robot-images {
+		text-align: center;
+	}
+
+	div.mobile-robot-images img {
+		max-height: 250px;
+	}
+
+	img.padding-top-small {
+		margin-top: 15px;
+	}
+
+	div.no-padding-left {
+		padding-left: 15px;
 	}
 }
 
