@@ -15,7 +15,7 @@ nav {
 }
 
 header, aside, section, footer {
-	background: rgba(255, 255, 255, 0.6);
+	background: rgba(220, 220, 220, 0.5);
 }
 
 header img {
@@ -32,7 +32,6 @@ img.round {
 }
 
 header {
-	background: rgba(255, 255, 255, 0.6);
 	text-shadow: 1px 0px 1px gray;
 	text-align: center;
 	-webkit-border-radius: 10px 10px 0 0;
@@ -128,12 +127,11 @@ ul#drop, ul#drop li, ul#drop li a {
 #social {
 	padding-bottom: 20px;
 	padding-top: 10px;
-	background: rgba(255, 255, 255, 0.6);
 }
 
 #skills blockquote {
 	border-left: 4px solid #F54545;
-	color: #333333;
+	color: #292828;
 	font-style: italic;
 }
 

@@ -54,7 +54,6 @@ $(function() {
 	// detect if touch device :if so, block the "hover" event for the dropdown
 	if ('ontouchstart' in document.documentElement) {
 		$('#arrowTop span').removeAttr('title class data-tooltip');
-		$('a[data-dropdown]').removeAttr('data-options');
 	}
 
 	// instanciate foundation-js
@@ -98,15 +97,6 @@ $(function() {
 			scrollTop: $goToElement.offset().top - navHeight // position so that the sticky nav and the Element to go to are well aligned vertically
 		}, Math.abs(window.pageYOffset - $goToElement.offset().top) / 2); // "smooth-scroll" speed is constant
 	});
-
-	// on the first click of a dropdown (used to fix dropdown on some touch devices)
-	$('a[data-dropdown]').one('click', function(e) {
-		setTimeout(function() {
-			if (!$(this).hasClass('open')) // if dropdown is not working...
-				$(this).attr('href', '#education').addClass('smooth-scroll').click(); // fix the dropdown
-		}, 15);
-	});
-
 
 
 	/* EASTER EGGS PURPOSE */
