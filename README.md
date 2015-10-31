@@ -2,6 +2,6 @@
 
 This is where I'll show cool stuff I've worked on! 
 
-Visit http://jonathangb.github.io
+Visit <a href="http://jonathangb.com">jonathangb.com</a>
 
 Ps: I'm still working on it.
