@@ -5,6 +5,10 @@ body {
 	background-size: cover;
 }
 
+.no-wrap {
+	white-space: nowrap;
+}
+
 nav {
 	background: #153151;
 	color: #EFF4FB;
@@ -309,7 +313,7 @@ footer h4 {
 }
 
 @media screen and (max-width: 665px) {
-	a[data-dropdown="drop"] {
+	a.minimize {
 		font-size: 94%;
 	}
 	
@@ -331,7 +335,7 @@ footer h4 {
 }
 
 @media screen and (max-width: 380px) {
-	a[data-dropdown="drop"] {
+	a.minimize {
 		font-size: 75%;
 	}
 

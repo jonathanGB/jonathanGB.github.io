@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
+<!-- Looking for easter eggs? How about you click my image, lets' say... numerous times... like, 5 times... and maybe 5 more times? Who knows... But don't do it 5 more times, you would regret it -->
+<html lang="en">
 	<head>
-		<title>Jonathan GB - Personal Page</title>
+		<title>Jonathan GB - Page personnelle</title>
+		<link rel="shortcut icon" href="favicon.ico"/>
 		<link rel="stylesheet" type="text/css" href="css/foundation.min.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="UTF-8" />
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<script src="js/modernizr.js"></script>
 	</head>
 
 	<style>
@@ -19,71 +22,272 @@
 	<body>
 		<nav class="small-12 columns">
 			<div class="small-6 medium-3 columns right-border bottom-border">
-				<a href="#aboutMe" class="smooth-scroll">a propos de moi</a>
+				<a href="#aboutMe" class="smooth-scroll">à propos</a>
 			</div>
 			<div class="small-6 medium-3 columns right-border bottom-border">
-				<a href="#" class="smooth-scroll">education</a>
+				<a href="#education" class="smooth-scroll minimize">éducation et talents</a>
 			</div>
 			<div class="small-6 medium-3 columns right-border">
-				<a href="#" class="smooth-scroll">projets</a>
+				<a href="#projects" class="smooth-scroll">projets</a>
 			</div>
 			<div class="small-6 medium-3 columns">
 				<a href="index.html">ENGLISH</a>
 			</div>
 		</nav>
-		<div class="container light first">
+		<div class="container first">
 			<header class="row">
 				<div class="small-12 large-3 columns" data-sr="over 1.5s scale up 40%">
 					<img src="img/pp.jpg" alt="photo">
 				</div>
-				<h1 class="small-12 medium-12 large-9 columns">Hey, I'm Jonathan Guillotte-Blouin. Software Engineering student at uOttawa. </h1>
+				<h1 class="small-12 medium-12 large-9 columns">Hey, je suis Jonathan <span class="no-wrap">Guillotte-Blouin.</span> Étudiant en génie logiciel à uOttawa. </h1>
 			</header>
 			<aside id="social" class="row">
-				<div class="small-6 medium-4 columns" data-sr="enter left move 50px over 1.5s"> 
-					<a href="https://github.com/jonathanGB" class="handle">
+				<div class="small-6 medium-4 columns" data-sr="enter top move 20px over 1.5s"> 
+					<a href="https://github.com/jonathanGB">
 						<img src="img/github.png"> <br />
 						@jonathanGB
 					</a>
 				</div>
-				<div class="small-6 medium-4 columns" data-sr="scale up 20% over 2s"> 
-					<a href="https://twitter.com/boubou_101" class="handle">
-						<img src="img/twitter.png"> <br />
-						@boubou_101
+				<div class="small-6 medium-4 columns" data-sr="enter top move 20px over 1.5s"> 
+					<a href="https://ca.linkedin.com/in/jonathangblouin">
+						<img src="img/linkedin.png"> <br />
+						Connecter 
 					</a>
 				</div>
-				<div class="small-12 medium-4 columns" data-sr="enter right move 50px over 1.5s">
+				<div id="email" class="small-12 medium-4 columns" data-sr="enter top move 20px over 1.5s">
 					<a href="mailto:jonathan.guillotte.blouin@gmail.com">
 						<img src="img/email.png"> <br />
 						<span id="emailReduce"> jonathan.guillotte.blouin@gmail.com	</span>
 					</a>	
 				</div>
+				<div class="small-12 columns" id="resume" data-sr="enter bottom move 20px over 1.5s"> 
+					<a href="resume.pdf" download target="_blank">
+						<img id="pdfDownload" src="img/pdf.png">
+						Télécharger mon CV
+					</a>
+				</div>
 			</aside>
 		</div>
-		<div class="container dark">
+		<div class="container light">
 			<section id="aboutMe" class="row">
-				<h2 class="small-12 medium-offset-1 medium-11 columns">
-					<span class="underline">about me</span> 
+				<h2 class="small-12 medium-offset-1 medium-11 large-offset-0 large-12 columns">
+					<span class="underline">à propos</span> 
 				</h2>
-				<p class="small-12 medium-offset-1 medium-11 columns">I am currently in my 2<sup>nd</sup> year, heading for my 3<sup>rd</sup> year next winter - yeah, it's kinda funky -. I'm presently looking for COOP opportunities this next summer in the webdev and robotics/IoT industries.</p>
-				<p class="small-12 medium-offset-1 medium-11 columns">
-					As for now, I am VP Social & Communications at uOttawa SESA (Software Engineering Student Association). I've been part of this organization from my first year, during which I worked mainly on translating communications from English to French and communicating events organized by the organization to our fellow engineering students.
+				<p class="small-12 medium-offset-1 medium-11 large-offset-0 large-12 columns">
+					Je suis présentement à ma 2<sup>e</sup> année, et je me dirige vers ma 3<sup>e</sup> cet hiver (étant donné des crédits du Cégep). Je cherche des opportunités co-op pour l'été prochain dans les domaines du développement web et de la robotique/IoT.
 				</p>
-				<p class="small-12 medium-offset-1 medium-11 columns">
-					Outside of school and programming, I like to read about history, political sciences and technology, whether it is in physical books, newspapers, or HackerNews and Medium. Also, I like to play hockey - I'm a defenseman -, and to play the drums. My favourite bands would be Rush (you know... <a href="https://www.youtube.com/watch?v=auLBLk4ibAk" target="_blank">Tom Sawyer</a>? Or if you dare, <a href="https://www.youtube.com/watch?v=AZm1_jtY1SQ" target="_blank">2112</a>... yeah, it's 20mins long, but you gotta do what you gotta do!), Nirvana (and pretty much all other grunge/alt rock of the 90s) and Jean Leloup (yay, good stuff from Québec) 
+				<p class="small-12 medium-offset-1 medium-11 large-offset-0 large-12 columns">
+					As for now, I am VP Social & Communications at uOttawa SESA (Software Engineering Student Association). I've been part of this organization since my first year, during which I worked mainly on translating communications from English to French and communicating events organized by the organization to our fellow engineering students.
 				</p>
+				<p class="small-12 medium-offset-1 medium-11 large-offset-0 large-12 columns">
+					Outside of school, I like to read about history, political sciences and technology, whether it is in physical books, newspapers, or HackerNews and Medium. I follow online courses on platforms like edX and Codecademy in order to learn new technologies and programming languages, or engineering/science subjects that interest me. 
+				</p>
+				<p class="small-12 medium-offset-1 medium-11 large-offset-0 large-12 columns">
+					Also, I like to play hockey (I'm a defenseman), watch soccer (German fan here) and play the drums. My favourite bands would be Rush (you know... <a href="https://www.youtube.com/watch?v=auLBLk4ibAk" target="_blank">Tom Sawyer</a>? Or if you dare, <a href="https://www.youtube.com/watch?v=AZm1_jtY1SQ" target="_blank">2112</a>... yeah, it's 20mins long, but you gotta do what you gotta do!), Nirvana (and pretty much all other grunge/alt rock of the 90s) and <a href="https://www.youtube.com/watch?v=q5Z_S4DT87c" target="_blank">Jean Leloup</a> (yay, good stuff from Québec).
+				</p>
+				<!-- <p class="small-12 medium-offset-1 medium-11 columns">
+					I also watch some shows, like &#8220;The Walking Dead&#8221; and its spinoff &#8220;Fear the Walking Dead&#8221;, &#8220;Silicon Valley&#8221; and &#8220;Mr. Robot&#8221;, and game on my PC from time to time with friends.
+				</p> -->
 			</section>
 		</div>
 		<div class="container light">
 			<section id="education" class="row">
+				<h2 class="small-12 medium-offset-1 medium-11 large-offset-0 large-12 columns">
+					<span class="underline">education & skills</span> 
+				</h2>
+				<h3 class="small-12 medium-offset-1 medium-11 large-offset-0 large-12 columns"> education </h3>
+				<ul class="small-12 medium-offset-1 medium-11 large-offset-0 large-12 columns">
+					<li>
+						<h3> University of Ottawa (2014-2018) - GPA: 9.4 </h3>
+						<i class="info">Bachelor of Applied Science (B.A.Sc.) Software Engineering</i>
+						<p>
+							So far, I've studied the basis of programming, engineering and digital systems. This year will be more thorough, as I'll dig deeper into software engineering practices, advanced concepts of C++, databases and computer architecture.
+						</p>
+						<p>
+							If all goes according to plan, I'll be part of the Undergraduate Research Opportunity Program (UROP) this year, in which I'll be supervised by Dr. Pierre Payeur. My task will be to work with a robotic hand in a context of manipulation of deformable materials; I'll be working on the software, and on the collection of essential data for use by a Ph.D. student on his thesis. To learn more about this project, <a class="smooth-scroll" href="#handRobot">click here</a>.
+						</p>
+					</li>
+					<li>
+						<h3> Cégep de l'Outaouais (2012-2014) - AVG: 87% </h3>
+						<i class="info">College Degree in Pure Sciences</i>
+						<p>
+							During my two years at Cégep, I learned about many sciences which study the Universe: I studied classical mechanics, electricity, modern physics, biology and chemistry. I also acquired a strong mathematical background, going from differential equations, linear algebra, to multivariable calculus. Cégep's curriculum wasn't solely focussed on math and science - I also spent time over three semesters studying philosophy and ethics.
+						</p>
+						<p>
+							During my last semester, I had the chance to work on a physics project with a colleague: we decided to build an autonomous robot capable of detecting a target in its surrounding, and stopping in front of it. This was my first foray into the world of robotics. To learn more about this project, <a class="smooth-scroll" href="#mobileRobot">click here</a>.
+						</p>
+					</li>
+					<li>
+						<h3> Extracurricular </h3>
+						<p>
+							Even though I think standard education is important, I like to learn outside of school. During my last year in high school (before going to Cégep), I decided to learn on my own how to build websites using <i>HTML5 & CSS3</i>. Then, in Cégep, I decided I wanted to animate these static pages I was building: I therefore learned how to program in <i>JavaScript</i> - which was my first time coding in my life - then came the back-end, using good ol' <i>PHP</i> and <i>MySQL</i>.
+						</p>
+						<p>
+							At this point, I was getting the hang of web development. While I was working on my <a class="smooth-scroll" href="#mobileRobot">robotics project</a>, I had to learn <i>Arduino</i> (which looks pretty much like C). Due to this, I decided to learn <i>C</i> online with CS50x, an &ldquo;Introduction to Computer Science&rdquo; course given by HarvardX.
+						</p>
+						<p>
+							Since then, I've gone to tutorials given at uOttawa on the <i>Ruby on Rails</i> framework, and during the last summer I dove into <i>Node.js</i> and <i>Meteor</i>, which uses <i>MongoDB</i>, a <i>NoSQL</i> database service.
+						</p>
+					</li>
+				</ul>
 			</section>
-		</section>
-		<div class="container dark">
+			<section id="skills" class="row">
+				<h3 class="small-12 medium-offset-1 medium-11 large-offset-0 large-12 columns"> skills </h3>
+				<div class="small-12 medium-offset-1 medium-11 large-offset-0 large-12 columns">
+					<p>
+						I cannot think of a better way to categorize my tech/programming skills than the one <a href="http://www.craigbryan.me/#skills" target="_blank">brought by Craig Bryan</a>, a fellow exec at SESA. The system is categorized into &ldquo;Family&rdquo;, &ldquo;Friends&rdquo; and &ldquo;Acquaintances&rdquo;, as explained below:
+					</p>
+						<blockquote cite="http://www.craigbryan.me/#skills">
+							My "Family" — I'm in contact with these folks almost every day and I know them very well, including their quirks. <br />
+
+							My "Friends" — I see these people pretty often, and I enjoy spending time with them. They keep some secrets from me, and that's just fine. <br />
+
+							My "Acquaintances" — I see these people around, and only have long conversations with them occasionally. Some of them are old friends with whom I've fallen out of touch, and others are those with whom I wish I could spend more time.
+						</blockquote>
+						So here it is!
+					</p>
+				</div>
+			</section>
+			<section id="skillsList" class="row">
+				<div class="small-6 medium-4 columns" data-sr="scale up 80% over 1.5s, vfactor 1">
+					<h4>Family</h4>
+					<ul>
+						<li>HTML5</li>
+						<li>CSS3</li>
+						<li>JavaScript</li>
+						<li>jQuery</li>
+						<li>Twitter Bootstrap</li>
+						<li>Github</li>
+					</ul>
+				</div>
+				<div class="small-6 medium-4 columns" data-sr="scale up 80% over 1.5s, vfactor 0.9">
+					<h4>Friends</h4>
+					<ul>
+						<li>Java</li>
+						<li>C</li>
+						<li>git</li>
+						<li>Arduino</li>
+						<li>Linux</li>
+						<li>Meteor</li>
+					</ul>
+				</div>
+				<div class="small-12 medium-4 columns" data-sr="scale up 80% over 1.5s, vfactor 0.9">
+					<h4>Acquaintances</h4>
+					<ul>
+						<li>PHP</li>
+						<li>C++</li>
+						<li>Ruby on Rails</li>
+						<li>Python</li>
+						<li>MySQL</li>
+						<li>MongoDB</li>
+						<li>Node.js</li>
+						<li>Subversion (SVN)</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+		<div class="container light">
 			<section id="projects" class="row">
+				<h2 class="small-12 medium-offset-1 medium-11 large-offset-0 large-12 columns">
+					<span class="underline">projects</span> 
+				</h2>
+				<ul class="small-12 medium-offset-1 medium-11 large-offset-0 large-12 columns">
+					<li>
+						<h3 id="handRobot">Robotic hand</h3>
+						<i class="info">Undergraduate research project ~~ C - C++</i> <br />
+						<i class="info">October 2015 - March 2016</i>
+						<p>
+							My task will be to work with a robotic hand (of type <i>Barrett</i>) in a context of manipulation of deformable materials. I'll be supervised by Dr. Pierre Payeur. More details to come, later in the school year.
+						</p>
+					</li>
+					<li>
+						<h3>Polymer Bank Notes pages</h3>
+						<i class="info">Front-end webapp ~~ JavaScript & jQuery</i> <br />
+						<i class="info"><a href="http://www.bankofcanada.ca/banknotes/bank-note-series/polymer/design/">Design page</a> - <a href="http://www.bankofcanada.ca/banknotes/bank-note-series/polymer/security-features/">Security page</a></i> <br />
+						<i class="info">June 2015 - August 2015</i>
+						<p>
+							As an intern at the Bank of Canada during summer 2015, a big project I had for more than half of the term was to rethink the Polymer Bank Notes pages (with another COOP from uOttawa, <a href="http://ryanfitzgerald.ca/">Ryan Fitzgerald</a>). The objectives were to make the content appealing, accessible for mobile users and interactive, in order to replace paper promotion. 
+						</p>
+						<p>
+							Ryan and I worked closely, him working more on the styling, content and structure of the pages, while I was dwelling on the interactivity of the pages, their behaviour and how they would grab content dynamically.
+						</p>
+						<p>
+							Since then, the platform we built has been ported to other parts of the site, and should soon be reused for other bank notes series.
+						</p>
+					</li>
+					<li>
+						<h3> TSI Mobile </h3>
+						<i class="info">Full-stack Webapp ~~ JavaScript & jQuery - AWS - PHP - cURL </i> <br />
+						<i class="info">October 2014 - November 2014</i>
+						<p>
+							I developed a webapp for VIA rail Canada that could show in real-time if a specific train line or trains going to a specific station were on-time or late. This was done by showing "Scheduled Arrival" time compared to the "Estimated Arrival" time, and the ETA of a train for a certain station. All the information used was inside XML files, which were grabbed on the back-end using cron and cURL, then parsed. The app would update data via AJAX calls every minute. 
+						</p>
+						<p>
+							On the VIA side, some analytics could definitely be useful. I wrote a PHP script to grab data and store it inside a database, in order to have an on-time performance chart of the day for every hour of service. Also, I made a grid with every train on service in which we could easily visualize the on-time performance of all of them.
+						</p>
+						<p>
+							This was a great experience to build a full-stack webapp: I had to create an EC2 instance on AWS, learn how to connect to remote servers via SSH, get used to the Linux terminal and tools (like cron), and install web dependencies.
+						</p>
+					</li>
+					<li>
+						<h3> Vector Calculator </h3>
+						<i class="info">Front-end Webapp ~~ JavaScript & jQuery - Bootstrap </i> <br />
+						<i class="info"><a href="https://github.com/jonathanGB/VectorCalculator"> <img src="img/github.png" height="25" width="25" alt="github logo"> GitHub repo</a>
+						 - <a href="http://vectorscalculator.com/index-en.html">Website</a> </i> <br />
+						<i class="info">September 2014 - October 2014</i>
+						<p>
+							I build this webapp because I was tired of doing redundant vector calculations - addition or product of vectors, angle conversion from radians to degrees and finding the unit vector. This is a handy tool that accelerates these calculations, and allowed me to validate my other answers. Furthermore,  I wanted to make it available online, to allow other math/engineering students to use it.
+						</p>
+						<p>
+							It was a great occasion to dive into developing my first front-end webapp using lots of JavaScript/jQuery, and to understand the process of pushing content on the Internet (via git and Heroku).
+						</p>
+					</li>
+					<li>
+						<h3 id="mobileRobot">Mobile Robot</h3>
+						<i class="info">Physics project ~~ Arduino - Electronics</i> <br />
+						<i class="info"><a href="https://github.com/jonathanGB/Arduino/tree/master/Mobile_Robot"> <img src="img/github.png" height="25" width="25" alt="github logo"> GitHub repo</a></i> <br />
+						<i class="info">February 2014 - April 2014</i>
+						<p>
+							Part of my program in Cégep was to work on a science project during our last semester, which I decided to do in the physics department. With the help of a teammate, both having no background in electronics (and me having basic programming knowledge in JavaScript), we decided to build an autonomous mobile robot using an Arduino.
+						</p>
+						<p>
+							My teammate focused more on the circuity, while I worked on the programming. The robot consisted of 2 independently controlled DC motors, an Arduino, a distance sensor, a collision sensor, a RGB LED, a dual H-Bridge, and an alimentation of 7.5V (for the Arduino) and of 12V (for the motors). The program was constantly reading data from the sensors, doing basic filtering of the data acquired and then outputting a specific voltage to the motors and triggering a specific colour of the RGB LED.
+						</p>
+						<p>
+							It was a very inspiring experience, convincing me to go in Software Engineering. Not only that, but our project was rewarded with the best science project presentation of the day (<a href="img/mobile_robot_poster.pdf" target="_blank">here's the poster, in French only!</a>)
+						</p>
+						<p>
+							If you're curious to learn more about the robot, the <a href="https://github.com/jonathanGB/Arduino/tree/master/Mobile_Robot">GitHub repo</a> contains the code used, a brief presentation and also videos of the robot and of the collision sensor we used. The videos are in French, but I put up a description of them <a href="https://github.com/jonathanGB/Arduino/blob/master/Mobile_Robot/videos/video_description.MD">here</a>!
+						</p>
+						<div class="small-12 medium-6 columns no-padding-left mobile-robot-images" data-sr="scale up 80% over 1.5s">
+							<img class="round" src="img/mobile_robot_back.jpg" alt="back of the robot">
+						</div>
+						<div class="small-12 medium-6 columns no-padding-left mobile-robot-images" data-sr="scale up 80% over 1.5s">
+							<img class="round padding-top-small" src="img/mobile_robot_top.jpg" alt="top of the robot">
+						</div>
+					</li>
+				</ul>
 			</section>
-		</section>
-		
+		</div>
+		<div class="container last light">
+			<footer class="row">
+				<h4>
+					Last push to this repo: <span id="lastPush"> </span> <!-- Date grabbed using GitHub's API -->
+				</h4>
+				<i class="info">Detected using GitHub's API</i>
+			</footer>
+		</div>
+		<div id="arrowTop">
+			<span data-tooltip class="has-tip tip-right" title="Top of the page">
+				<img src="img/arrowTop.png">
+			</span>
+		</div>
+		<audio src="audio/easter1.mp3"></audio>
+		<img data-src="img/easter1.jpg" alt="easter egg 1" id="easter1" />
+		<img data-src="img/easter2.gif" alt="easter egg 2" id="easter2" />
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<script src="js/foundation.min.js"></script>
+		<script src="js/foundation.tooltip.min.js"></script>
 		<script src="js/scrollReveal.min.js"></script>
 		<script>
 			var config = {
