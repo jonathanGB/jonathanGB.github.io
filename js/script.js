@@ -51,7 +51,7 @@ $(function() {
 	if (window.pageYOffset > 300)
 		$('#arrowTop').show();
 
-	// detect if touch device :if so, block the "hover" event for the dropdown
+	// detect if touch device: if so, block the "hover" event for the dropdown
 	if ('ontouchstart' in document.documentElement) {
 		$('#arrowTop span').removeAttr('title class data-tooltip');
 	}
@@ -63,6 +63,9 @@ $(function() {
 			disable_for_touch: true
 		}
 	});
+
+	if ($('html').attr('lang') == 'en')
+		$('#projects li p, #projects li div').hide();
 
 	getLastPushToRepo();
 
@@ -97,6 +100,13 @@ $(function() {
 			scrollTop: $goToElement.offset().top - navHeight // position so that the sticky nav and the Element to go to are well aligned vertically
 		}, Math.abs(window.pageYOffset - $goToElement.offset().top) / 2); // "smooth-scroll" speed is constant
 	});
+
+	if ($('html').attr('lang') == 'en') {
+		$('#projects li h3').click(function() {
+			$(this).children('.caret').toggleClass('caret-open');
+			$(this).siblings('p, div').slideToggle();
+		});
+	}
 
 
 	/* EASTER EGGS PURPOSE */
