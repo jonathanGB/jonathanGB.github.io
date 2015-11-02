@@ -64,9 +64,6 @@ $(function() {
 		}
 	});
 
-	if ($('html').attr('lang') == 'en')
-		$('#projects li p, #projects li div').hide();
-
 	getLastPushToRepo();
 
 
@@ -101,12 +98,11 @@ $(function() {
 		}, Math.abs(window.pageYOffset - $goToElement.offset().top) / 2); // "smooth-scroll" speed is constant
 	});
 
-	if ($('html').attr('lang') == 'en') {
-		$('#projects li h3').click(function() {
-			$(this).children('.caret').toggleClass('caret-open');
-			$(this).siblings('p, div').slideToggle();
-		});
-	}
+	// slideDown/slideUp the projects description on click
+	$('#projects li h3').click(function() {
+		$(this).children('.caret').toggleClass('caret-open');
+		$(this).siblings('p, div').slideToggle(200);
+	});
 
 
 	/* EASTER EGGS PURPOSE */
