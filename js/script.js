@@ -53,7 +53,7 @@ $(function() {
 
 	// detect if touch device: if so, block the "hover" event for the dropdown
 	if ('ontouchstart' in document.documentElement) {
-		$('#arrowTop span').removeAttr('title class data-tooltip');
+		$('[data-tooltip]').removeAttr('title data-tooltip');
 	}
 
 	// instanciate foundation-js
