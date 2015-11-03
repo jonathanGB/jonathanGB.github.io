@@ -143,6 +143,8 @@ ul#drop, ul#drop li, ul#drop li a {
 	display: inline-block;
 	-webkit-transition: -webkit-transform 0.7s; 
     transition: transform 0.7s;
+    color: #153151;
+    font-size: 1.1em;
 }
 
 #social a:hover {
