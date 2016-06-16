@@ -49,7 +49,13 @@ $(function() {
 	$('#social div').click(function() {
 		var src = $(this).data('target');
 		console.log('click social', src);
-		ga('send', 'event', 'Social Header', 'click', 'Chosen icon', src);
+		ga('send', 'event', {
+			eventCategory: 'Social Header', 
+			eventAction: 'click', 
+			eventLabel: 'Chosen icon', 
+			eventValue: src,
+			transport: 'beacon'
+		});
 	})
 
 	// show the "arrowTop" image if we're far enough from the top of the page (arbitrarily 300px)
