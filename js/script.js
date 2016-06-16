@@ -9,7 +9,7 @@ function getLastPushToRepo() {
 		    months = [],
 		    dateSuffix = lastUpdate.getDate(),
 		    lastUpdateString = '';
-		    
+
 		if (lang == "en") {
 			days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 			months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -46,6 +46,11 @@ function getLastPushToRepo() {
 $(function() {
 
 	/* ON START */
+	$('#social div').click(function() {
+		var src = $(this).data('target');
+
+		ga('send', 'event', 'Social Header', 'click', 'Chosen icon', src);
+	})
 
 	// show the "arrowTop" image if we're far enough from the top of the page (arbitrarily 300px)
 	if (window.pageYOffset > 300)
@@ -69,7 +74,7 @@ $(function() {
 
 	/* EVENTS */
 
-	// show/hide the "arrowTop" image depending on the vertical offset of the page the user is 
+	// show/hide the "arrowTop" image depending on the vertical offset of the page the user is
 	$(document).scroll(function(e) {
 		if (window.pageYOffset > 300)
 			$('#arrowTop').show();
@@ -77,7 +82,7 @@ $(function() {
 			$('#arrowTop').hide();
 	});
 
-	// "scroll to the top of the page" animation handler	
+	// "scroll to the top of the page" animation handler
 	$('#arrowTop img').click(function(e) {
 		e.preventDefault();
 
@@ -89,7 +94,7 @@ $(function() {
 	// anchors in the page "smooth-scroll" animation handler
 	$('a.smooth-scroll').click(function(e) {
 		e.preventDefault();
-		
+
 		var $goToElement = $($(this).attr('href')); // grab the Element to scroll to
 		var navHeight = $('nav').height() + parseInt($('nav').css('padding-bottom')) + parseInt($('nav').css('padding-top')); // calculate the height of the nav (padding included)
 
@@ -111,12 +116,12 @@ $(function() {
 
 	$('header img').click(function() { // hint: that's my picture at the top...
 		clicks++;
-		
+
 		if (clicks == 5) {
 			console.log("and his name is john cena");
 
 			// swap "data-src" to "src", so easter1 img is loaded (but not by the ones who don't know about this easter egg)
-			var src = $('#easter1').data('src'); 
+			var src = $('#easter1').data('src');
 			$('#easter1').removeData('src').removeAttr('data-src').attr('src', src);
 
 			$('#easter1').fadeIn(500);
@@ -140,7 +145,7 @@ $(function() {
 				}, 5000);
 			});
 		} else if (clicks == 15) { // if you're here, you've gone mad
-			$('audio').attr('loop', 'true').get(0).play(); // make the audio loop infinitely 
+			$('audio').attr('loop', 'true').get(0).play(); // make the audio loop infinitely
 			$('#easter2').fadeIn(500);
 		}
 	});
