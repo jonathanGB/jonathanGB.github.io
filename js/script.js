@@ -48,7 +48,7 @@ $(function() {
 	/* ON START */
 	$('#social div').click(function() {
 		var src = $(this).data('target');
-
+		console.log('click social', src);
 		ga('send', 'event', 'Social Header', 'click', 'Chosen icon', src);
 	})
 
