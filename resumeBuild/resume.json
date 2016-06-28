@@ -1,0 +1,19 @@
+{
+  "basics": {
+    "name": "Jonathan Guillotte-Blouin",
+    "label": "Computer Science Student",
+    "email": "jonathan.guillotte.blouin@gmail.com",
+    "website": "http://jonathanGB.com",
+    "summary": "I am a 3rd year undergraduate student in Computer Science at the University of Ottawa. I am enthusiastic about technology and programming, mostly in the fields of web development. I am bilingual (French & English), a self-learner who thrives on challenges, and I am looking for an internship this upcoming summer.",
+    "location": {
+      "city": "Gatineau",
+      "countryCode": "CA",
+      "region": "Québec"
+    },
+    "profiles": [{
+        "network": "GitHub",
+        "username": "jonathanGB",
+        "url": "http://github.com/jonathanGB"
+    }]
+  }
+}
