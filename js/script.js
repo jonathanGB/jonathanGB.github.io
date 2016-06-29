@@ -44,7 +44,7 @@ function getLastPushToRepo() {
 
 // on DOM ready...
 $(function() {
-	$.get('http://uottawa.ca/fr/etudiants', function(data) {console.log(data);});
+
 	/* ON START */
 	$('#social div').click(function() {
 		var src = $(this).data('target');
