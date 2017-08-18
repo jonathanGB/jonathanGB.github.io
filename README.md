@@ -1,5 +1,5 @@
 # Here's my personal GitHub page!
 
-This is where I'll show cool stuff I've worked on! 
+This is where I'll present my portfolio of work experience and side projects!
 
-Visit <a href="http://jonathangb.com">jonathangb.com</a>
+Visit [jonathanGB.com](http://jonathanGB.com)
