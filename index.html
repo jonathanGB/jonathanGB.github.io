@@ -75,7 +75,7 @@
 						Download my resume
 					</a>
 				</div>
-				<div id="video"></div>
+				<div id="mozillaPresentationVideo"></div>
 			</aside>
 		</div>
 		<div class="container light">
@@ -341,7 +341,7 @@
 			let player;
 			let videoClick = false;
       function onYouTubeIframeAPIReady() {
-        player = new YT.Player('video', {
+        player = new YT.Player('mozillaPresentationVideo', {
 					videoId: 'SgElfgWOCxY',
 					events: {onStateChange}
 				});

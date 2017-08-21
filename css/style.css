@@ -59,8 +59,8 @@ header {
 	padding-top: 20px;
 }
 
-#video {
-	margin-top: 50px !important;
+#mozillaPresentationVideo {
+	margin-top: 50px;
 	width: 900px;
 	height: 450px;
 }
