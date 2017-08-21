@@ -48,23 +48,16 @@ $(function() {
 
 	/* ON START */
 	$('a').click((e) => {
-		e.preventDefault()
 		let href = e.target.href;
-		let destination = href; // defaults to the current location
-		let hitCallback = () => {}; // defaults to NOOP
 
+		// only store the fragment if redirecting to an anchor
 		if (href.includes(`${ownHref}#`)) {
 			let hashIndex = href.indexOf("#");			
-			destination = href.substring(hashIndex);
-
-			console.log(`anchor: ${destination}`);
-		} else {
-			hitCallback = () => window.open(destination, "_blank");
-			console.log(`redirect: ${destination}`)
+			href = href.substring(hashIndex);
 		}
 
-		ga('send', 'event', 'link click', destination, {hitCallback});
-	})
+		ga('send', 'event', 'link click', href);
+	});
 
 	// show the "arrowTop" image if we're far enough from the top of the page (arbitrarily 300px)
 	if (window.pageYOffset > 300)
