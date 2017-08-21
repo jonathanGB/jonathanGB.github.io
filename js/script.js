@@ -44,18 +44,26 @@ function getLastPushToRepo() {
 
 // on DOM ready...
 $(function() {
+	let ownHref = location.href;
 
 	/* ON START */
-	$('#social div').click(function() {
-		var src = $(this).data('target');
-		console.log('click social', src);
-		ga('send', 'event', {
-			eventCategory: 'Social Header', 
-			eventAction: 'click', 
-			eventLabel: 'Chosen icon', 
-			eventValue: src,
-			transport: 'beacon'
-		});
+	$('a').click((e) => {
+		e.preventDefault()
+		let href = e.target.href;
+		let destination = href; // defaults to the current location
+		let hitCallback = () => {}; // defaults to NOOP
+
+		if (href.includes(`${ownHref}#`)) {
+			let hashIndex = href.indexOf("#");			
+			destination = href.substring(hashIndex);
+
+			console.log(`anchor: ${destination}`);
+		} else {
+			hitCallback = () => window.open(destination, "_blank");
+			console.log(`redirect: ${destination}`)
+		}
+
+		ga('send', 'event', 'link click', destination, {hitCallback});
 	})
 
 	// show the "arrowTop" image if we're far enough from the top of the page (arbitrarily 300px)
