@@ -75,7 +75,7 @@
 						Download my resume
 					</a>
 				</div>
-				<iframe id="video" src="https://www.youtube.com/embed/SgElfgWOCxY" frameborder="0" allowfullscreen></iframe>
+				<div id="video"></div>
 			</aside>
 		</div>
 		<div class="container light">
@@ -334,7 +334,29 @@
 			};
 
       		window.sr = new scrollReveal(config);
-    	</script>
-    	<script src="js/script.js"></script>
+    </script>
+		<script src="js/script.js"></script>
+		<script src="https://www.youtube.com/iframe_api"></script>
+		<script>
+			let player;
+			let videoClick = false;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('video', {
+					videoId: 'SgElfgWOCxY',
+					events: {onStateChange}
+				});
+			}
+
+      function onStateChange(e) {
+				if (videoClick) {
+					return;
+				}
+
+        if (e.data == YT.PlayerState.PLAYING) {
+					videoClick = true;
+					ga('send', 'event', 'video start', 'started mozilla video');
+        }
+      }
+    </script>
 	</body>
 </html>
