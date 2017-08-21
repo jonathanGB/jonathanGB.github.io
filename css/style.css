@@ -59,6 +59,12 @@ header {
 	padding-top: 20px;
 }
 
+#video {
+	margin-top: 50px !important;
+	width: 900px;
+	height: 450px;
+}
+
 .info {
 	position: relative;
 	bottom: 15px;
@@ -301,6 +307,11 @@ footer h4 {
 		border-radius: 0;
 		padding-bottom: 35px;
 	}
+
+	#video {
+		width: calc(100% - 20px);
+		height: 400px;
+	}
 }
 
 @media screen and (max-width: 850px) {
@@ -329,11 +340,19 @@ footer h4 {
 	#resume {
 		border-top: 1px solid #153151;
 	}
+
+	#video {
+		height: 300px;
+	}
 }
 
 @media screen and (max-width: 500px) {
 	section ul li h3 {
 		font-size: 1.2rem;
+	}
+
+	#video {
+		height: 200px;
 	}
 }
 
